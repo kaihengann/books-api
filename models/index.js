@@ -18,7 +18,7 @@ if (currentEnv === "production") {
 const models = {
   Book: sequelize.import("./book"),
   Author: sequelize.import("./author")
-};
+}
 // Call association function in each model to link them up together
 Object.keys(models).forEach(key => {
   if ("associate" in models[key]) {
